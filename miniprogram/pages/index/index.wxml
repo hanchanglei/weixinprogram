@@ -1,0 +1,26 @@
+<!-- 公共头部区域 -->
+<my-header
+  title="{{publicTitle}}"
+  back
+/>
+
+<!-- 正文内容区域 -->
+<swiper class="swiper" style="height:calc( 100vh - {{headerHeight}}px - 100rpx )" current="{{current}}" bindchange="swiperchange">
+  <swiper-item>
+    <my-recommend />
+  </swiper-item>
+  <swiper-item>
+    <my-message />
+  </swiper-item>
+  <swiper-item>
+    <my-person />
+  </swiper-item>
+</swiper>
+
+
+<!-- tabbar 底部切换 -->
+<my-tabbar
+  current="{{currentPage}}"
+  bindchange="handlechange"
+  tabbarList="{{tabList}}"
+ />

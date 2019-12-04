@@ -1,0 +1,23 @@
+.tabbar{
+  position: fixed;
+  display: flex;
+  width: 750rpx;
+  height: 100rpx;
+  border-top:1px solid #ccc; 
+  bottom: 0;
+  left: 0;
+}
+.tabbar .tab-item{
+  width: 750rpx;
+  height:100rpx;
+}
+.icon{
+  display: block;
+  margin: 10rpx auto 0;
+  width: 60rpx;
+  height: 60rpx;
+}
+.tab-title{
+  font-size: 10px;
+  padding-left: 42%;
+}

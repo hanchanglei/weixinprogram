@@ -1,0 +1,31 @@
+<my-header
+  title="上传题库"
+  back
+  bindbeforeBack="confirm"
+/>
+
+<view class="title">请输入题目</view>
+
+<view>
+  <text>题目描述：</text>
+  <input bindinput="descriptionInput" value="{{description}}"></input>
+</view>
+<view>
+  <text>具体代码：</text>
+  <input bindinput="codeInput" value="code"></input>
+</view>
+<view>
+  <text>选项：</text>
+  <button bindtap="add" type="primary">增加一条选项</button>
+  <view wx:for="{{selection}}" wx:key="{{item.num}}">
+    {{index+1}}<input value="{{item.value}}" bindinput="chooseInput" data-num="{{index}}"></input>
+  </view>
+</view>
+
+<view>
+  <text>正确答案为</text>
+  <view>{{answer}}</view>
+  <picker range="{{selection}}" range-key="{{'value'}}" bindchange="change">选择</picker>
+</view>
+
+<button bindtap="submit" type="primary">提交</button>

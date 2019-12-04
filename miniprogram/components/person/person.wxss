@@ -1,0 +1,21 @@
+.logincover{
+  position: absolute;
+  width: 750tpx;
+  height: 250rpx;
+  opacity: 0;
+}
+.head-icon{
+  float: left;
+  height: 150rpx;
+  width: 150rpx;
+  margin: 50rpx;
+}
+.login{
+  overflow: hidden;
+  margin-bottom: 150rpx;
+  box-shadow: 0 0 50rpx #ccc;
+}
+.nickname{
+  line-height: 250rpx;
+  font-size: 20px;
+}

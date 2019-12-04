@@ -1,0 +1,23 @@
+<!-- 搜索框 -->
+<view class="search" bindtap="jump">
+  <image class="img" src="./search.png"></image>
+  <text>请输入你想要查找的课程</text>
+</view>
+<!-- 课程名单 -->
+<scroll-view class="select" scroll-x="true">
+  <view wx:for="{{list}}" data-keywords="{{item.name}}" bindtap="search">
+    {{item.name}}
+  </view>
+</scroll-view>
+
+<!-- 轮播 -->
+<swiper class="banner">
+  <swiper-item wx:for="{{swiperList}}">
+    <image mode="aspectFill" src="{{item.icon}}"></image>
+  </swiper-item>
+</swiper>
+
+<!-- 精品课程 -->
+<my-list
+  
+/>

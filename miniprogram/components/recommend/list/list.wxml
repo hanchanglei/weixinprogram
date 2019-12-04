@@ -1,0 +1,9 @@
+<swiper class="list">
+  <swiper-item class="flex" wx:for="{{lessonList}}"> 
+    <view class="lesson" bindtap="lessonDetail" data-lessonId="{{item.courseId}}" wx:for="{{item}}">
+      <image src="{{item.cover}}"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </swiper-item>
+</swiper>
+<view class="test"></view>

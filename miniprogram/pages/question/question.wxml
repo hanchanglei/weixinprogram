@@ -1,0 +1,22 @@
+<my-header
+  title="{{key}}:答题系统(剩余时间{{min}}:{{sec}})"
+  back
+  bindbeforeBack="confirm"
+/>
+
+<!-- 进度 -->
+<view class="progress">{{current+1}}/{{total}}</view>
+
+<swiper class="question" current="{{current}}" bindchange="change">
+    <swiper-item wx:for="{{questionList}}">
+    <view class="description">{{item.description}}</view>
+      <view class="code">{{item.code}}</view>
+      <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{item.selection}}">
+      <radio value="{{item.value}}"/>{{item.value}}
+      </label>
+      </radio-group>
+    </swiper-item>
+</swiper>
+
+<button bindtap="next" type="primary">下一题</button>

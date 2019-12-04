@@ -1,0 +1,4 @@
+/* pages/upload/upload.wxss */
+input{
+  border: 1px solid #ccc;
+}

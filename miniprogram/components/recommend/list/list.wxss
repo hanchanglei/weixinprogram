@@ -1,0 +1,29 @@
+/* components/recommend/list/list.wxss */
+.list{
+  height: 550rpx;
+  margin-top: 20rpx;
+}
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.lesson{
+  width: 350rpx;
+  height:250rpx;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  text-align: center;
+  color: royalblue;
+}
+.lesson image{
+  width: 350rpx;
+  height: 200rpx;
+}
+.lesson text{
+  line-height: 50rpx;
+}
+.test{
+  height: 500rpx;
+}
+

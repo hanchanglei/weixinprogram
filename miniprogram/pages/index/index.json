@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "my-recommend": "/components/recommend/recommend",
+    "my-message": "/components/message/message",
+    "my-person": "/components/person/person",
+    "my-tabbar": "/components/tabbar/tabbar"
+  }
+}
